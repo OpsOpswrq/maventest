@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用GET方法获取数据</title>
+</head>
+<body>
+<!--注意这里的action的重要点-->
+<!--注意/test和test的区别  第一个是相对与localhost的相对路径  第二个是相对于localhost/feng的相对路径-->
+<!--第一个可以写成绝对路径（相对于http:/192.168.1.1:8080）-->
+<!--第二个写成相对路径（相对于http://192.168.1.1:8080/hello/page）-->
+<!--/代表当前的web应用，也就是localhost:8080/feng-->
+<!--实现多选框的读取-->
+<form action="test" method="get">
+    名字:<input type="text" name="name">
+    <input type="submit" value="提交"><br>
+    <h5>hobby</h5><br>
+    <input type="checkbox" name="hobby" value="游戏">游戏
+    <input type="checkbox" name="hobby" value="view">风景
+    <input type="checkbox" name="hobby" value="program">编程
+</form>
+</body>
+</html>
